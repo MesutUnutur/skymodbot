@@ -8113,8 +8113,8 @@ const Oa = "typebot-font",
             t.forEach(((e, t) => {
                 o[t] = e
             }));
-            const i = "string" == typeof e.typebot ? e.typebot : void 0,
-                a = "string" != typeof e.typebot || (e.isPreview ?? !1),
+            const i = "string" == typeof e.skymodbot ? e.skymodbot : void 0,
+                a = "string" != typeof e.skymodbot || (e.isPreview ?? !1),
                 c = (e => {
                     if (e) try {
                         return sessionStorage.getItem(`${va}-${e}`) ?? localStorage.getItem(`${va}-${e}`) ?? void 0
@@ -8189,7 +8189,7 @@ const Oa = "typebot-font",
                     }
                 }({
                     stripeRedirectStatus: t.get("redirect_status") ?? void 0,
-                    skymodbot: e.typebot,
+                    skymodbot: e.skymodbot,
                     apiHost: e.apiHost,
                     isPreview: a,
                     resultId: ze(e.resultId) ? e.resultId : c,
@@ -8244,9 +8244,9 @@ const Oa = "typebot-font",
             r(d.typebot.theme.customCss ?? "")
         };
         return $((() => {
-            Oe(e.typebot) || i() || c().then()
+            Oe(e.skymodbot) || i() || c().then()
         })), $((() => {
-            Oe(e.typebot) || "string" == typeof e.typebot || (r(e.typebot.theme.customCss ?? ""), e.typebot.theme.general?.progressBar?.isEnabled && t() && !t()?.typebot.theme.general?.progressBar?.isEnabled && (s(!1), c().then()))
+            Oe(e.skymodbot) || "string" == typeof e.skymodbot || (r(e.skymodbot.theme.customCss ?? ""), e.skymodbot.theme.general?.progressBar?.isEnabled && t() && !t()?.typebot.theme.general?.progressBar?.isEnabled && (s(!1), c().then()))
         })), E((() => {
             s(!1)
         })), [(() => {
@@ -8277,19 +8277,19 @@ const Oa = "typebot-font",
                         ...t,
                         typebot: {
                             ...t.typebot,
-                            settings: "string" == typeof e.typebot ? t.typebot?.settings : e.typebot?.settings,
-                            theme: "string" == typeof e.typebot ? t.typebot?.theme : e.typebot?.theme
+                            settings: "string" == typeof e.skymodbot ? t.typebot?.settings : e.skymodbot?.settings,
+                            theme: "string" == typeof e.skymodbot ? t.typebot?.theme : e.skymodbot?.theme
                         }
                     }
                 },
                 get context() {
                     return {
                         apiHost: e.apiHost,
-                        isPreview: "string" != typeof e.typebot || (e.isPreview ?? !1),
+                        isPreview: "string" != typeof e.skymodbot || (e.isPreview ?? !1),
                         resultId: t.resultId,
                         sessionId: t.sessionId,
                         typebot: t.typebot,
-                        storage: t.typebot.settings.general?.rememberUser?.isEnabled && "string" == typeof e.typebot && !e.isPreview ? t.typebot.settings.general?.rememberUser?.storage ?? Bn.rememberUser.storage : void 0
+                        storage: t.typebot.settings.general?.rememberUser?.isEnabled && "string" == typeof e.skymodbot && !e.isPreview ? t.typebot.settings.general?.rememberUser?.storage ?? Bn.rememberUser.storage : void 0
                     }
                 },
                 get progressBarRef() {
